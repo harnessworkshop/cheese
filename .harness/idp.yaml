@@ -12,6 +12,9 @@ metadata:
   description: Munster
   annotations:
     backstage.io/techdocs-ref: url:https://github.com/harnessworkshop/cheese/blob/main
+    github.com/project-slug: harnessworkshop/idp-workshop
+    harness.io/pipelines: |
+      Deploy:  https://workshop.harness.io/ng/account/IFG41DWvSnaRLOVNB2uesg/home/orgs/idp/projects/SelfService_Onboarding/pipelines/OnboardAppPipeline/pipeline-studio?storeType=INLINE
     backstage.io/source-location: url:https://github.com/harnessworkshop/cheese
   links:
   - title: Website
