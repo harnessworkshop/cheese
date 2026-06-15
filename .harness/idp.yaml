@@ -1,0 +1,20 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: cheese
+name: cheese
+owner: group:account/Kroger
+orgIdentifier: kroger455org
+projectIdentifier: kroger455ip24
+spec:
+  lifecycle: experimental
+metadata:
+  description: Munster
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/harnessworkshop/cheese/blob/main
+    backstage.io/source-location: url:https://github.com/harnessworkshop/cheese
+  links:
+  - title: Website
+    url: https://harness.io
+  tags:
+  - my-sample
