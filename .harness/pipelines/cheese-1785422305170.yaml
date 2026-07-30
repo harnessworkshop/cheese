@@ -30,6 +30,12 @@ pipeline:
                   template:
                     templateRef: owasp
                     versionLabel: v0.1
+              - step:
+                  name: fortify
+                  identifier: fortify
+                  template:
+                    templateRef: account.fortify_scan
+                    versionLabel: v0.1
     - stage:
         name: Build
         identifier: Build
