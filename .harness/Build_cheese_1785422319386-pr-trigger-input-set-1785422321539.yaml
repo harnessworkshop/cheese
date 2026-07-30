@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_cheese_1785422319386-pr-trigger-input-set
+  identifier: Build_cheese_1785422319386prtriggerinputset
+  orgIdentifier: medallia515org
+  projectIdentifier: medallia515ip3
+  pipeline:
+    identifier: Build_cheese_1785422319386
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
