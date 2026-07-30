@@ -25,6 +25,12 @@ pipeline:
                   template:
                     templateRef: owasp
                     versionLabel: v0.1
+              - step:
+                  name: fority
+                  identifier: fority
+                  template:
+                    templateRef: fortify
+                    versionLabel: v0.1
           platform:
             os: Linux
             arch: Amd64
