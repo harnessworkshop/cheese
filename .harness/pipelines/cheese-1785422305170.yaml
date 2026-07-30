@@ -5,38 +5,6 @@ pipeline:
   orgIdentifier: medallia515org
   stages:
     - stage:
-        name: owasp
-        identifier: owasp
-        description: ""
-        type: SecurityTests
-        spec:
-          cloneCodebase: true
-          caching:
-            enabled: true
-            override: false
-          buildIntelligence:
-            enabled: true
-          platform:
-            os: Linux
-            arch: Amd64
-          runtime:
-            type: Cloud
-            spec: {}
-          execution:
-            steps:
-              - step:
-                  name: owasp-step
-                  identifier: owaspstep
-                  template:
-                    templateRef: owasp
-                    versionLabel: v0.1
-              - step:
-                  name: fortify
-                  identifier: fortify
-                  template:
-                    templateRef: account.fortify_scan
-                    versionLabel: v0.1
-    - stage:
         name: Build
         identifier: Build
         type: CI
@@ -51,6 +19,12 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo "Welcome to Harness CI"
+              - step:
+                  name: owasp
+                  identifier: owasp
+                  template:
+                    templateRef: owasp
+                    versionLabel: v0.1
           platform:
             os: Linux
             arch: Amd64
