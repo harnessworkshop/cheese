@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_cheese_1785422319386-push-trigger-input-set
+  identifier: Build_cheese_1785422319386pushtriggerinputset
+  orgIdentifier: medallia515org
+  projectIdentifier: medallia515ip3
+  pipeline:
+    identifier: Build_cheese_1785422319386
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
